@@ -1,0 +1,51 @@
+.color{
+    background-color: lightgray;
+}
+.font{
+    font-size: 27px;
+    font-weight: bold;
+}
+.bold{
+    font-weight: bold;
+    height: 35px;
+    text-align: center;
+}
+.imageclick{
+    cursor: pointer;
+}
+.icon{
+    width: 30px;
+    background-color: white;
+}
+/* .timer{
+    color: white;
+} */
+/* .ending{
+    height: 90px;
+} */
+.divtimer{
+   /* height: 15px; */
+    color: black;
+    font-weight: bold;
+}
+.size{
+    width: 450px;
+}
+.error{
+    color: red;
+    display: none;
+    /* text-align: center; */
+}
+.submit{
+ background-color: red;   
+ color: white;
+ padding: 10px 60px;
+ cursor: pointer;
+ border-radius: 8px;
+}
+.addtocart{
+word-wrap: break-word;    
+}
+
+
+/* body{background: #000}.card{border: none;height: 320px}.forms-inputs{position: relative}.forms-inputs span{position: absolute;top:-18px;left: 10px;background-color: #fff;padding: 5px 10px;font-size: 15px}.forms-inputs input{height: 50px;border: 2px solid #eee}.forms-inputs input:focus{box-shadow: none;outline: none;border: 2px solid #000}.btn{height: 50px}.success-data{display: flex;flex-direction: column}.bxs-badge-check{font-size: 90px} */

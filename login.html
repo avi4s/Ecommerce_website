@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <title>Document</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body style="background-color: black;">
+
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+    <div class="container">
+      <a class="navbar-brand text-danger font" href="index.html">LOUD</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse bg-dark" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto text-center">
+          <li class="nav-item active pl-3">
+            <a class="nav-link home" onmouseover="homehover()" onmouseleave="homeleave()" href="index.html">Home <span
+                class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item active pl-3">
+            <a class="nav-link product" onmouseover="producthover()" onmouseleave="productleave()"
+              href="products.html">Products</a>
+          </li>
+          <li class="nav-item dropdown active  pl-3">
+            <a class="nav-link dropdown-toggle dailydeals" onmouseover="dailydealshover()"
+              onmouseleave="dailydealsleave()" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">
+              Daily Deals
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="offer.html">Offers</a>
+              <a class="dropdown-item" href="newlaunch.html">New Launch</a>
+              <!-- <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">Something else here</a>
+              </div> -->
+          </li>
+          <!-- <li class="nav-item  pl-3">
+            <a class="nav-link active" href="cart.html">🛒</a>
+          </li> -->
+          <li class="nav-item active  pl-3">
+            <a class="nav-link active" href="login.html"><img class="icon" src="Media/icons8-add-user-male-64.png"></a>
+          </li>
+        </ul>
+        <!-- <form class="form-inline my-2 my-lg-0">
+        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+      </form> -->
+      </div>
+    </div>
+  </nav>
+
+  <div class="view"
+    style="background-image: url(Media/airdopes1.webp); background-repeat: no-repeat; background-size: cover; background-position:  center;">
+    <!-- Mask & flexbox options-->
+    <div class="mask rgba-black-light align-items-center">
+      <!-- Content -->
+      <div class="container">
+        <!--Grid row-->
+        <div class="row">
+          <!--Grid column-->
+          <div class="col-md-12 mb-4 white-text text-center">
+            <h1 class="h1-reponsive white-text text-uppercase font-weight-bold mb-0 pt-md-5 pt-5 wow fadeInDown"
+              data-wow-delay="0.3s"><strong class="text-white" >Login</strong></h1>
+            <hr class="hr-light my-4 wow fadeInDown" data-wow-delay="0.4s">
+            <h5 class="text-uppercase mb-4 white-text wow fadeInDown" data-wow-delay="0.4s"><strong
+                class="text-white">Please enter your email and password:</strong></h5>
+            <!-- <form action="cart.html">
+              <div class="text-center mt-5 pt-5">
+                <input type="text" class=" p-2 size mt-3" placeholder="E-mail"><br>
+                <input type="email" class="mt-3 p-2 size" placeholder="Password">
+              </div>
+            </form> -->
+
+            <div class="container-fluid">
+              <form action="index.html" class="was-validated loginvalid">
+                  <div class="form-group">
+                      <!-- <label>Name</label> -->
+                      <input type="text" name="name" class="form-control size mx-auto" id="inp1" placeholder="E-mail" required><span id="warning1"></span>
+                      <div class="valid-feedback">Good</div>
+                      <div class="invalid-feedback">Please enter name</div>
+                  </div>
+                  <div class="form-group">
+                      <!-- <label>Password</label> -->
+                      <input type="password" name="password" class="form-control size mx-auto" placeholder="Password" required>
+                      <div class="valid-feedback">Good</div>
+                      <div class="invalid-feedback">Please enter password</div>
+                  </div><br>
+                  <div class="text-center pt-3">
+                    <button id="login" class="p-3 size bg-danger text-white">LOGIN</button>
+                  </div>
+              </form>
+          </div>
+            
+            <!-- <div class="text-center pt-3">
+              <button id="login" class="p-3 size bg-danger text-white mt-5">LOGIN</button>
+            </div> -->
+            <div class="text-center mt-2">
+              <p class="text-white">New Customer? <a href="registration.html" class="text-white">Create an account</a>
+              </p>
+            </div>
+            <!-- <a class="btn btn-outline-white wow fadeInDown" data-wow-delay="0.4s">portfolio</a>
+            <a class="btn btn-outline-white wow fadeInDown" data-wow-delay="0.4s">About me</a> -->
+          </div>
+          
+          <!--Grid column-->
+        </div>
+        <!--Grid row-->
+      </div>
+      <!-- Content -->
+    </div>
+    <!-- Mask & flexbox options-->
+  </div>
+  
+
+  <!-- <div>
+    <h1 class="text-danger text-center mt-5">LOGIN</h1>
+    <h6 class="text-white text-center mt-4">Please enter your email and password:</h6>
+  </div>
+
+  <div class="text-center mt-5 pt-5">
+    <input type="text" class=" p-2 size" placeholder="E-mail"><br>
+    <input type="email" class="mt-2 p-2 size" placeholder="Password">
+  </div>
+  <div class="text-center pt-3">
+    <button id="login" class="p-3 size bg-danger text-white">LOGIN</button>
+  </div>
+  <div class="text-center mt-2">
+    <p class="text-white">New Customer? <a href="registration.html" class="text-white">Create an account</a> </p>
+  </div> -->
+
+
+  <!-- <div>
+    <img class=" w-25 rounded mx-auto d-block" src="media/airdopes1.webp">
+  </div> -->
+
+   <!-- Footer -->
+   <div class="col-12">
+    <div class="row">
+      <div class="mt-5 bg-dark">
+        <p class="text-danger text-center p-2">India's fastest growing audio & wearables brand. The most incredible
+          range of wireless earphones, earbuds, headphones, smart watches, and home audio. From workouts to adventures,
+          LOUD will get you sailing!</p>
+      </div>
+      <footer class="text-center  bg-dark" style="width: 100%;">
+        <!-- Section: Social media -->
+        <section class="d-flex justify-content-center justify-content-lg-between border-bottom">
+
+          <!-- Right -->
+          <div>
+            <a href="" class="me-4 text-reset">
+              <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="" class="me-4 text-reset">
+              <i class="fab fa-twitter"></i>
+            </a>
+            <a href="" class="me-4 text-reset">
+              <i class="fab fa-google"></i>
+            </a>
+            <a href="" class="me-4 text-reset">
+              <i class="fab fa-instagram"></i>
+            </a>
+            <a href="" class="me-4 text-reset">
+              <i class="fab fa-linkedin"></i>
+            </a>
+            <a href="" class="me-4 text-reset">
+              <i class="fab fa-github"></i>
+            </a>
+          </div>
+          <!-- Right -->
+        </section>
+        <!-- Section: Social media -->
+
+        <!-- Section: Links  -->
+        <section class="">
+          <div class="container text-center text-md-start">
+            <!-- Grid row -->
+            <div class="row mt-3">
+              <!-- Grid column -->
+              <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+                <!-- Content -->
+                <h1 class="text-uppercase fw-bold mb-4 text-danger">
+                  <i class="fas fa-gem me-3"></i>LOUD
+                </h1>
+               <input type="text" placeholder="Enter Email" />
+               <button class="mt-2">Subscribe </button>
+
+              </div>
+              <!-- Grid column -->
+
+              <!-- Grid column -->
+              <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+                <!-- Links -->
+                <h6 class="text-uppercase fw-bold mb-4 text-white">
+                  Company
+                </h6>
+                <p>
+                  <a href="index.html" class="text-reset text-white">Home</a>
+                </p>
+                <p>
+                  <a href="products.html" class="text-reset text-white">Products</a>
+                </p>
+                <p>
+                  <a href="offer.html" class="text-reset text-white">Offers</a>
+                </p>
+                <!-- <p>
+                  <a href="#!" class="text-reset text-white">Contact us</a>
+                </p> -->
+              </div>
+              <!-- Grid column -->
+
+
+              <!-- Grid column -->
+              <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                <!-- Links -->
+                <h6 class="text-uppercase fw-bold mb-4 text-white">
+                  Contact
+                </h6>
+                <p class="text-white"><i class="fas fa-home me-3 "></i> Indore, MP-452018</p>
+                <p class="text-white">
+                  <i class="fas fa-envelope me-3"></i>
+                  loud@bass.com
+                </p>
+                <p class="text-white"><i class="fas fa-phone me-3"></i> + 0731 234 567 8</p>
+                <p class="text-white"><i class="fas fa-print me-3"></i> + 0731 234 567 9</p>
+              </div>
+              <!-- Grid column -->
+            </div>
+            <!-- Grid row -->
+          </div>
+        </section>
+
+
+        <!-- Copyright -->
+        <div class="text-center p-4 text-white" style="background-color: rgba(0, 0, 0, 0.05);">
+          © 2021 Copyright:
+          <a class="text-reset fw-bold text-white" href="index.html">loud.com</a>
+        </div>
+        <!-- Copyright -->
+      </footer>
+      <!-- Footer -->
+
+    </div>
+  </div>
+  </div>
+
+  <script src="main.js"></script>
+
+</body>
+
+</html>
